@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Multimedia</title>
+    </head>
+    <body>
+        <picture>
+            <source media="(min-width: 768px)" srcset="../images/old_pic.jpg" />
+            <source
+                media="(min-width: 480px)"
+                srcset="../images/old_pic_2012.jpg"
+            />
+            <img src="../images/old_pic_smile.jpg" alt="my pic smile face" />
+        </picture>
+        <br />
+        <audio controls loop="true">
+            <source
+                src="../music/rahulsapkal-jab-se-tumko-dekha-romantic-hindi-love-song-552187.mp3"
+                type="audio/mpeg"
+            />
+        </audio>
+        <br />
+
+        <video controls width="600px" poster="../images/me_with_raju_sir.jpg">
+            <source
+                src="../videos/Aankh Hai Bhari Bhari (Acoustic Cover) 😭🎸 _ Navya OfficialNP.mp4"
+                type="video/mp4"
+            />
+        </video>
+
+        <hr />
+        <video controls>
+            <source
+                src="../videos/Tanveer Evan - Akash (আকাশ) _ Official Music Video.mp4"
+            />
+
+            <track
+                src="../bangla.vtt"
+                kind="subtitles"
+                srclang="bn"
+                label="বাংলা"
+                default
+            />
+        </video>
+
+        <br>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/90lnGTz_PV4?si=fgRmy0vAji-_Eo8T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </body>
+</html>

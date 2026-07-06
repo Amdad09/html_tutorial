@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form</title>
+    </head>
+    <body>
+        <form action="./about" method="post">
+            <fieldset>
+                <legend>About yourself</legend>
+                <label for="name">Your name: </label><br />
+                <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    minlength="5"
+                    maxlength="15"
+                    autofocus
+                    required
+                    placeholder="your name"
+                /><br /><br />
+
+                <label for="email">Your email: </label><br />
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                    placeholder="your email"
+                    autocomplete="on"
+                /><br /><br />
+
+                <label for="id">Your ID:</label><br />
+                <input
+                    type="number"
+                    title="read only"
+                    value="26"
+                    name="id"
+                    id="id"
+                    min="18"
+                    max="60"
+                /><br /><br />
+
+                <label for="ex">Your ex: </label><br />
+                <input
+                    type="text"
+                    title="Disabled"
+                    name="ex"
+                    id="ex"
+                    placeholder="Your ex"
+                    value="Chokina"
+                    disabled
+                /><br /><br />
+
+                <label for="password">Password: </label><br />
+                <input
+                    type="password"
+                    required
+                    name="password"
+                    id="password"
+                    placeholder="Your password"
+                    autocomplete="off"
+                /><br /><br />
+
+                <label for="file">Your file: </label><br>
+                <input type="file" accept="image/*" name="file" id="file" multiple><br>
+                <input type="file" name="file" id="file" accept=".pdf"><br><br>
+
+                <label for="fifa">FIFA: </label><br>
+                <input type="number" name="fifa" id="fifa" step="4"><br><br>
+            </fieldset>
+        </form>
+    </body>
+</html>

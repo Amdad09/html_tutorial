@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form</title>
+    </head>
+    <body>
+        <form action="./login" method="get">
+            <label for="name">Username: </label>
+            <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your username"
+            /><br /><br />
+            <label for="email">Email: </label>
+            <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your email"
+            /><br /><br />
+            <label for="age">Age: </label>
+            <input type="number" name="age" id="age" /><br /><br />
+            <label for="image">Image: </label>
+            <input
+                type="file"
+                accept=".jpg*"
+                name="image"
+                id="image"
+            /><br /><br />
+            <label for="date">Date: </label>
+            <input type="date" name="date" id="date" /><br /><br />
+            <label for="time">Time: </label>
+            <input type="time" name="time" id="time" /><br /><br />
+            <label for="color">Color: </label>
+            <input type="color" name="color" id="color" /><br /><br />
+            <label for="language">Labguage: </label>
+            <select name="language" id="language">
+                <option value="js">JS</option>
+                <option value="js">TS</option>
+                <option value="js">Java</option></select
+            ><br /><br />
+            <label for="car">Car: </label><br />
+            <input type="radio" name="car" id="car" />BMW <br />
+            <input type="radio" name="car" id="car" />Audi <br />
+            <input type="radio" name="car" id="car" />Benz <br /><br />
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" /><br /><br />
+            <input type="search" name="search" id="search" /><br /><br />
+            <input type="submit" value="Submit" />
+        </form>
+
+        <hr />
+        <form action="./register" method="post">
+            <label for="comment">Comment:</label><br />
+            <textarea
+                name="comment"
+                id="comment"
+                rows="6"
+                placeholder="Write your comment"
+            ></textarea
+            ><br />
+            <button type="submit">Submit</button>
+        </form><br><br>
+        <select name="dev" id="">
+            <option value="react">React</option>
+            <option value="next">Next.js</option>
+            <option value="mongodb">MongoDB</option>
+        </select>
+
+        <hr>
+        <fieldset>
+            <legend>Login Form</legend>
+            <label for="email">Your email: </label><br>
+            <input type="email" name="email" id="email" placeholder="your email"><br>
+            <label for="password">Password: </label><br>
+            <input type="password" name="password" id="password" placeholder="password"><br><br>
+            <button type="submit">Login</button>
+        </fieldset>
+    </body>
+</html>
